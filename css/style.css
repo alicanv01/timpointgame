@@ -1,44 +1,115 @@
 body{
-    background-color: black;
+    background-color: rgb(246, 227, 227);
     color:aliceblue;
+
+}
+*{
+    padding: 0;
+    box-sizing: border-box;
 }
 
 #gameDiv{
-    background: blue;
-    padding: 30px;
-    border: solid white 3px ;
-    border-radius: 30px;
-    text-align: center;
-}
+    width: 100vw ;
+    height:  100vh ;
 
-#screenGameDiv{
-    background: rgb(76, 76, 255);
-    padding: 30px;
-    border: solid white 3px ;
     border-radius: 30px;
     text-align: center;
     
 }
 
+
+#screenGameDiv{
+display: flex;
+flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+#screenGameDiv{
+padding: 60px 30px;
+
+    text-align: center;
+    
+}
+
+
+#pointDiv{
+ gap: 10px;
+}
+
+
+
+
+
+
 #lineA{
-    background: rgb(255, 83, 77);
-
-}
-#lineB{
-    background: rgb(0, 0, 0);
-}
-#lineC{
-    background: rgb(0, 140, 255);
-}
-
-.line{
-
+    background:rgb(255, 255, 255);
     display: flex;
-    padding: 30px;
+    padding: 0 60px;
     border: solid white 3px ;
-    justify-content: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 30px black ;
+    color: black;
+    align-items: center;
+    border-radius: 50px;
+
 }
 
+
+
+
+
+#infoGame{
+    background:rgb(255, 255, 255);
+    display: flex;
+    padding: 10px 60px;
+    border: solid white 3px ;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px black ;
+    color: black;
+    align-items: center;
+    border-radius: 50px;
+}
+
+#playButonGame{
+    background:rgb(255, 255, 255);
+    width:50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px black ;
+    color: black;
+    
+transform: scale(1);
+transition: box-shadow 0.1s ease-in-out
+,transform 0.1s ease-in-out;
+
+}
+*{
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+}
+
+#playButonGame:active{
+    background:rgb(255, 255, 255);
+
+box-shadow: 0px 0px 10px black ;
+transform: scale(0.95);
+transition: box-shadow 0.1s ease-in-out
+,transform 0.1s ease-in-out;
+}
 .symbolImg{
-    width: 100px;
+    width: 20vw;
+}
+
+#pointDiv{
+    display: flex;
+
 }

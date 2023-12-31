@@ -61,38 +61,39 @@ function play() {
     let symbolAValue = spinValue * 10;
     let symbolBValue = spinValue * 3;
     let symbolCValue = spinValue * 1;
-
-    if (result) {
+ const amountWinPointDiv = document.getElementById("amountWinPointDiv")
+   const amountPointDiv = document.getElementById("amountPointDiv") 
+   if (result) {
         console.log("win")
         if (dataValue == "0") {
             sold = symbolAValue + sold - spinValue;
             console.log("vous gangé ", symbolAValue, " votre sold est de ", sold)
-            const amountWinPointDiv = document.getElementById("amountWinPointDiv")
-            amountWinPointDiv.innerHTML = `///////////////////////////   Win Point :D  ${symbolAValue - spinValue}   ///////////////////////`
-            const amountPointDiv = document.getElementById("amountPointDiv")
-            amountPointDiv.innerHTML = `///////////////////////////   your Point :D  ${sold}   ///////////////////////`
+           
+            amountWinPointDiv.innerHTML = `Win Point  ${symbolAValue}  `
+            
+            amountPointDiv.innerHTML = `your Point  ${sold  - spinValue}  `
        
         }
         if(dataValue == "1"){
             sold = symbolBValue + sold - spinValue;
             console.log("vous gangé ", symbolBValue, " votre sold est de ", sold)
-            const amountWinPointDiv = document.getElementById("amountWinPointDiv")
-            amountWinPointDiv.innerHTML = `///////////////////////////   Win Point :D  ${symbolBValue - spinValue}   ///////////////////////`
-            const amountPointDiv = document.getElementById("amountPointDiv")
-            amountPointDiv.innerHTML = `///////////////////////////   your Point :D  ${sold}   ///////////////////////`
+            
+            amountWinPointDiv.innerHTML = `Win Point   ${symbolBValue}  `
+            
+            amountPointDiv.innerHTML = `your Point   ${sold - spinValue} `
         }
         if(dataValue == "2"){
             sold = symbolCValue + sold - spinValue;
             console.log("vous gangé ", symbolCValue, " votre sold est de ", sold)
-            const amountWinPointDiv = document.getElementById("amountWinPointDiv")
-            amountWinPointDiv.innerHTML = `///////////////////////////   Win Point  :-D  ${symbolCValue - spinValue}   ///////////////////////`
-            const amountPointDiv = document.getElementById("amountPointDiv")
-            amountPointDiv.innerHTML = `///////////////////////////   your Point  ${sold}   ///////////////////////`
+            
+            amountWinPointDiv.innerHTML = `Win Point ${symbolCValue}  `
+       
+            amountPointDiv.innerHTML = `your Point  ${sold - spinValue}  `
         }
     } else {
-        amountWinPointDiv.innerHTML = `///////////////////////////   lost Point   :'(  - ${spinValue}   ///////////////////////`
-        const amountPointDiv = document.getElementById("amountPointDiv")
-        amountPointDiv.innerHTML = `///////////////////////////   your Point:D   ${sold}   ///////////////////////`
+        sold=sold-spinValue
+        amountWinPointDiv.innerHTML = `lost Point   -${spinValue}  `
+        amountPointDiv.innerHTML = ` your Point ${sold - spinValue}  `
     }
 
 
