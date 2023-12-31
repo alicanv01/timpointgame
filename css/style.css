@@ -61,12 +61,7 @@ padding: 60px 30px;
 
 }
 
-@media only screen and (max-width: 600px) {
-   #infoGame{
-    display ; flex;
-  flex-dierction:column
-  }
-}
+
 
 
 
