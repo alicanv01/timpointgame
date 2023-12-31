@@ -58,9 +58,9 @@ function play() {
     console.log(spinValue)
 
     
-    let symbolAValue = spinValue * 100;
-    let symbolBValue = spinValue * 50;
-    let symbolCValue = spinValue * 20;
+    let symbolAValue = spinValue * 30;
+    let symbolBValue = spinValue * 10;
+    let symbolCValue = spinValue * 5;
  const amountWinPointDiv = document.getElementById("amountWinPointDiv")
    const amountPointDiv = document.getElementById("amountPointDiv") 
    if (result) {
