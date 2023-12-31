@@ -1,0 +1,45 @@
+body{
+    background-color: black;
+    color:aliceblue;
+}
+
+#gameDiv{
+    background: blue;
+    padding: 30px;
+    border: solid white 3px ;
+    border-radius: 30px;
+    text-align: center;
+}
+
+#screenGameDiv{
+    background: rgb(76, 76, 255);
+    padding: 30px;
+    border: solid white 3px ;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+
+#lineA{
+    background: rgb(255, 83, 77);
+
+}
+#lineB{
+    background: rgb(0, 0, 0);
+}
+#lineC{
+    background: rgb(0, 140, 255);
+}
+
+.line{
+    display: flex;
+    
+    width: 100%;
+    padding: 30px;
+    border: solid white 3px ;
+    text-align: center;
+}
+
+.symbolImg{
+    width: 100px;
+}
