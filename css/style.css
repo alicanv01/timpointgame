@@ -75,6 +75,7 @@ padding: 60px 30px;
     color: black;
     align-items: center;
     border-radius: 50px;
+    flex-wrap:wrap;
 }
 
 #playButonGame{
