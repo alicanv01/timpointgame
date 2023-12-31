@@ -63,7 +63,13 @@ padding: 60px 30px;
 
 
 
-
+@media screen and (orientation: landscape) {
+    body {
+        /* Ajoutez les styles spécifiques au mode paysage ici */
+        background-color: #e0e0e0;
+        font-size: 18px;
+    }
+}
 
 #infoGame{
     background:rgb(255, 255, 255);
