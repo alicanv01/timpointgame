@@ -11,26 +11,40 @@
     <div id="gameDiv">
       <div id="screenGameDiv">
         <div id="lineA" class="lineA line">
-          <div id="caseAA" class="caseLineA" data="a">aa</div>
-          <div id="caseAB" class="caseLineA" data="a">ab</div>
-          <div id="caseAC" class="caseLineA" data="a">ac</div>
+          <div id="caseAA" class="caseLineA" data="a"><img class="symbolImg" src="assets/scatter.png" alt="">aa</div>
+          <div id="caseAB" class="caseLineA" data="a"><img class="symbolImg" src="assets/scatter.png" alt="">ab</div>
+          <div id="caseAC" class="caseLineA" data="a"><img class="symbolImg" src="assets/scatter.png" alt="">ac</div>
         </div>
         <br />
         <div id="lineB" class="line">
-            <div id="caseBA" class="caseLineB ">ba</div>
-            <div id="caseBB" class="caseLineB ">bb</div>
-            <div id="caseBC" class="caseLineB ">bc</div>
+            <div id="caseBA" class="caseLineB "><img class="symbolImg" src="assets/symbolA.png" alt="">ba</div>
+            <div id="caseBB" class="caseLineB "><img class="symbolImg" src="assets/symbolA.png" alt="">bb</div>
+            <div id="caseBC" class="caseLineB "><img class="symbolImg" src="assets/symbolA.png" alt="">bc</div>
           </div>
         <br />
         <div id="lineC" class="line">
-            <div id="caseCA" class="caseLineC ">ca</div>
-            <div id="caseCB" class="caseLineC ">cb</div>
-            <div id="caseCC" class="caseLineC ">cc</div>
+            <div id="caseCA" class="caseLineC "><img class="symbolImg" src="assets/symbolB.png" alt="">ca</div>
+            <div id="caseCB" class="caseLineC "><img class="symbolImg" src="assets/symbolB.png" alt="">cb</div>
+            <div id="caseCC" class="caseLineC "><img class="symbolImg" src="assets/symbolB.png" alt="">cc</div>
           </div>
       </div>
       <br />
       <div id="infoGame">
         <div id="pointDiv">
+                
+              <form>
+<legend>sipn value</legend>
+                  <input type="radio" id="spinValue10" name="spinValueChoix" value="10" checked/>
+                  <label for="spinValue10">10 point</label>
+
+                  <input type="radio" id="spinValue5" name="spinValueChoix" value="5" />
+                  <label for="spinValue1">5 point</label>
+
+                  <input type="radio" id="spinValue1" name="spinValueChoix" value="1" />
+                  <label for="spinValue1">1 point</label>
+                
+              </form>
+               
           <div id="amountWinPointDiv">WinPoint</div>
           <div id="amountPointDiv">Point</div>
           <div id="amountSpinPointDiv">SpinPoint</div>
@@ -40,6 +54,6 @@
           <div id="playButonGame">playButon</div>
         </div>
       </div>
-    </div><script src="/js/app.js"></script>
+    </div><script src="js/app.js"></script>
   </body>
 </html>
